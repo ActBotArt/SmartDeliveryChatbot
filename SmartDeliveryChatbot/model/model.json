@@ -1,0 +1,27 @@
+{
+  "class_name": "Sequential",
+  "config": {
+    "layers": [
+      {
+        "class_name": "Embedding",
+        "config": {
+          "input_dim": 1000,
+          "output_dim": 64
+        }
+      },
+      {
+        "class_name": "LSTM",
+        "config": {
+          "units": 128
+        }
+      },
+      {
+        "class_name": "Dense",
+        "config": {
+          "units": 3,
+          "activation": "softmax"
+        }
+      }
+    ]
+  }
+}
